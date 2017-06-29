@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Revenda de carros - consultar modelo</title>
+</head>
+<body>
+<h1>Consulta Modelo por Marca</h1>
+<form action="/Revenda/consultarMarca">
+<select name="marca">
+  <option value="VolksVagen">VolksVagen</option>
+  <option value="Onixy">Onixy</option>
+  <option value="Toyota">Toyota</option>
+</select>
+<input type="submit" value="Consultar">
+</form>
+<a href="http://localhost:8080/Revenda/listarTodos">Listar Todos os carros</a>
+<form action="/Revenda/consultarModelo" method="get">
+Buscar por Marca: <input type="text" name="modelo"><p><br />
+<input type="submit" value="buscar">
+</form>
+</body>
+</html>
